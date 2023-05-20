@@ -56,39 +56,9 @@ const userSlice = createSlice({
             localStorageService.saveState(USER_KEY, state.user);
             localStorageService.saveState("status", state.isAuth);
         },
-        removeFileList(state, action: PayloadAction<string[]>) {
-            for (let file of action.payload) {
-                if (state.user?.files.includes(file)) {
 
-                    state.user.files = state.user?.files.filter((elem) => elem !== file);
-                    localStorageService.saveState(USER_KEY, state.user);
-                } else {
-                    state.user?.deleteFiles.push(file)
-                }
 
-            }
-        },
-        removedBasketItem(state, action: PayloadAction<string[]>) {
-            for (let file of action.payload) {
-                if (state.user?.deleteFiles.includes(file)) {
 
-                    state.user.deleteFiles = state.user?.deleteFiles.filter((elem) => elem !== file);
-                    localStorageService.saveState(USER_KEY, state.user);
-                } else {
-                    state.user?.files.push(file)
-                }
-
-            }
-        },
-        addDeleteFiles(state, action: PayloadAction<string[] | string>) {
-            for (let file of action.payload) {
-                if (!state.user?.deleteFiles.includes(file)) {
-                    state.user?.deleteFiles.push(file)
-                }
-            }
-            localStorageService.saveState(USER_KEY, state.user);
-
-        },
 
 
     }
