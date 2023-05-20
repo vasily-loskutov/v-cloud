@@ -1,0 +1,29 @@
+.block{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap:3px;
+    margin-top:6px
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  margin-right: 15px;
+}
+.filesBlock{
+    width: 100%;
+    position: relative;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+}
+.empty{
+   width: 700px;
+   
+}

@@ -1,0 +1,56 @@
+.player{
+        object-fit: contain;
+    user-select: text;
+    position: fixed !important;
+    box-sizing: border-box !important;
+    min-width: 0px !important;
+    max-width: none !important;
+    min-height: 0px !important;
+    max-height: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    inset: 0px !important;
+    margin: 0px !important;
+    background-color: black;
+    z-index: 10000;
+  
+}
+.close{
+    position: fixed;
+    z-index: 1000000000;
+    top: 2%;
+    right:2%;
+    color:white;
+    font-size: 30px;
+}
+.block{
+    position: relative;
+}
+.videoControls{
+    z-index: 1000000000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+   
+ 
+    display: flex;
+    gap: 64px;
+}
+.playControls{
+    z-index: 1000000000;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    color:rgba(255, 255, 255, 0.405);
+    font-size: 70px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}

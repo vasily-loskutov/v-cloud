@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@layout": [
+        "./src/components/layout/index.ts"
+      ],
+      "@shared": [
+        "./src/components/shared/index.ts"
+      ],
+      "@redux": [
+        "./src/redux/index.ts"
+      ],
+      "@models": [
+        "./src/models/index.ts"
+      ],
+      "@services": [
+        "./src/services/index.ts"
+      ],
+      "@config": [
+        "./src/config.json"
+      ],
+      "@hooks": [
+        "./src/hooks/index.ts"
+      ],
+      "@utils": [
+        "./src/utils/index.ts"
+      ],
+      "@entity": [
+        "./src/components/entity/index.ts"
+      ],
+    },
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

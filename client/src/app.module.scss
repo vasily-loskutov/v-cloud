@@ -1,0 +1,17 @@
+.content{
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    padding-top: 32px;
+} 
+.mainBlock{
+    margin: auto auto;
+    background-color: white;
+    width: 1050px;
+    height: 700px;
+    border-radius: 15px;
+}
+.layout{
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+}

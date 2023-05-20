@@ -1,0 +1,39 @@
+.header{
+   background-color: rgb(24, 138, 237);
+}
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width:  1750px;
+    margin: 0 auto;
+}
+.headerLeft{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    gap:10px;
+    & > *{
+        font-size: 32px;
+        color:white;    
+    }
+  
+}
+.root{
+    :global {
+        .ant-menu {
+           background-color: transparent !important;
+          }
+}
+.topMenu {
+    min-width: 175px;
+  
+      .ant-menu-item-selected {
+        color: #ffffff !important;
+        background-color: rgb(255 255 255 / 15%) !important;
+        border-radius: 0 !important;
+      }
+     
+    
+    }
+  }
